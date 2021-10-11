@@ -1,0 +1,140 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "poppin";
+  src: url('fonts/Poppins-Regular.ttf');
+}
+:root{
+  --bg: #1f1f1f;
+  --bg2: #fff;
+  --secondary: #BC0C57;
+}
+body{
+  font-family: "poppin";
+  background: var(--bg);
+  color: white;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 15vh;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+  font-family: cursive;
+  font-size: 30px;
+  -webkit-text-stroke: 1px
+ #555;
+  -webkit-text-fill-color: transparent;
+}
+.menu div{
+  width: 2rem;
+  height: .2rem;
+  background: #ddd;
+  border-radius: 48px;
+  position: absolute;
+  transform: translateX(-50%, -50%), rotate(0);
+  
+}
+.bar1 {
+  top: 40%;
+}
+.bar2{
+  background: #42445A;
+  top: 50%;
+}
+.menu{
+  background: var(--secondary);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+}
+.sidebar{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: black;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.sidebar > a{
+  font-size: 30px;
+  color: #555;
+  text-transform:capitalize;
+  margin-bottom: 10px;
+}
+.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.move{
+  top: 2%;
+  right: 4%;
+  position: fixed;
+}
+
+
+.overlay{
+  clip-path: circle(0px);
+  background: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu2 div{
+  width: 2rem;
+  height: .2rem;
+  background: #ddd;
+  border-radius: 48px;
+  position: absolute;
+  transform: translateX(-50%, -50%), rotate(0);
+  
+}
+.menu2 .bar1 {
+  top: 45%;
+transform: rotate(0deg);
+}
+.menu2 .bar2{
+  top: 45%;
+  transform: rotate(0deg);
+}
+.menu2{
+  background: var(--secondary);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+
